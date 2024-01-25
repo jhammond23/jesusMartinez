@@ -1,0 +1,31 @@
+/* src/components/Header.css */
+.site-header {
+    background: #050505;
+    color: white;
+    padding: 10px 0;
+    height: 5vh;
+    box-shadow: 0 0 5px #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header-logo {
+    font-size: 1.3rem;
+}
+
+.header-nav .nav-link {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-nav .nav-link:hover {
+    text-decoration: underline;
+}

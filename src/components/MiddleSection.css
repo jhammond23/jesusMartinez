@@ -1,0 +1,64 @@
+.middle-section {
+    background: linear-gradient(to bottom, #111 50%, #000384 100%); /* Transition from purple to black */
+    color: white;
+    padding: 50px 20px; /* Adjust padding as needed */
+    text-align: center;
+    border: 1px solid #572dff;
+    box-shadow: 0 0 10px #572dff,10px 10px 50px #000, inset 0 0 50px #000;
+    border-radius: 50px;
+    margin: 40px;
+    position: relative;
+    overflow: hidden;
+    width: 96vw;
+    box-sizing: border-box;
+
+
+  }
+
+  .section-title {
+    font-family: 'Press Start 2p', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px #572dff;
+    letter-spacing: 2px;
+    color: #dad1ff;
+  }
+
+  .affiliate-links-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    z-index: 10;
+    position: relative;
+  }
+  
+/* Assuming .Tilt is the direct parent of your image */
+.Tilt {
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  overflow: hidden; /* Ensures content does not overflow, especially when using border-radius */
+  border-radius: 50%; /* Makes the container a circle */
+  /* You might want to set a specific width and height for the containers */
+  width: 150px; /* Example width */
+  height: 150px; /* Example height, equal to width to make it a perfect circle */
+  margin: 20px 50px; /* Optional: adds some space between the containers */
+}
+
+.affiliate-image {
+  max-width: 100%; /* Makes the image responsive */
+  max-height: 100%; /* Limits the image size to its container */
+  display: block; /* Removes extra space below the image */
+  object-fit: cover; /* Ensures the aspect ratio is preserved while covering the entire parent */
+}
+
+.disclaimer {
+  color: #dad1ff;
+}
+
+.middle-section .blockchain-grid {
+  z-index: 0;
+}

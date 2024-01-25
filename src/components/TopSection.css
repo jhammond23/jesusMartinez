@@ -1,0 +1,222 @@
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px;
+    color: white;
+    background: linear-gradient(to right, #000384 0%, #0f0f0f 70%);
+    height: 70vh;
+    width: 96vw;
+    box-sizing: border-box;
+    border: 1px solid #572dff;
+    box-shadow: 0 0 10px #572dff, 10px 10px 50px #000 ,inset 0 0 50px #000;
+    border-radius: 50px;
+    margin: 20px 40px;
+    position: relative;
+    overflow: hidden;
+
+  }
+  
+  .content {
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px #572dff;
+    font-family: 'Press Start 2p', cursive;
+    letter-spacing: 2px;
+  }
+
+  .nameh1 {
+    color: #dad1ff;
+  }
+
+  .content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .content h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  
+  .cta-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 1.75rem;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #572dff;
+    transition: .2s ease-in-out;
+    margin-top: 50px;
+  }
+  
+  .cta-button:hover {
+    background-color: #222;
+    box-shadow: 0 0 15px #572dff;
+    scale: 1.03;
+  }
+  
+  .image-container {
+    z-index: 1;
+    height: 85vh;
+    bottom: 0;
+    transform: translateY(70px);
+  }
+
+  .image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .social-media-icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    z-index: 2;
+    width: auto;
+    top: 12%;
+  }
+  
+  .social-media-icon svg {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media-icon::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #00f; /* Placeholder for gradient or other style */
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media-icon:hover::before {
+    transform: scale(1);
+  }
+
+/* Tilt effect container */
+.Tilt {
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 10px #572dff, inset 0 0 5px #000;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px;
+    cursor: pointer;
+}
+
+/* Tilt effect on hover */
+.Tilt:hover {
+    transform: rotateZ(-5deg) scale(1.1);
+    box-shadow: 0 0 20px #572dff, inset 0 0 10px #000;
+}
+
+/* Tilt effect on hover for the icon */
+.Tilt:hover .icon {
+    transform: rotateZ(10deg);
+}
+
+/* Inner content of the tilt effect container */
+.Tilt-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Icon styles */
+.icon {
+    transition: transform 0.3s ease; /* Smooth transition for icon */
+}
+
+.top-right-image,
+.middle-right-image {
+  /* Shared styles */
+  position: absolute;
+  max-width: 60%;
+  max-height: 60%;
+  opacity: 0.1;
+  border-radius: 50%; /* Makes the element circular */
+  animation: glowing-ring 30s infinite alternate;
+}
+
+.top-right-image {
+  bottom: -10%;
+  left: -0%;
+}
+
+.middle-right-image {
+  top: -10%;
+  left: 50%;
+}
+
+/* Keyframes for animated glowing ring */
+@keyframes glowing-ring {
+  0% {
+    box-shadow: 0 0 5px 0 #572dff;
+    transform: rotate(5deg);
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #572dff;
+    transform: rotate(5deg);
+  }
+}
+
+
+  @media (min-width: 576px) {
+    .top-section {
+      height: 80vh;
+    }
+  
+    .content h1 {
+      font-size: 3rem;
+    }
+  
+    .content p {
+      font-size: 1.2rem;
+    }
+}
+
+  @media (min-width: 768px) {
+    .top-section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .content h1 {
+      font-size: 3.5rem;
+    }
+  
+    .content p {
+      font-size: 1.3rem;
+    }
+  }
+  

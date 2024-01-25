@@ -1,3 +1,17 @@
+* {
+  font-family: 'Share Tech';
+
+}
+
+.parentBG {
+  background-color: #191919;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }

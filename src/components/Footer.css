@@ -1,0 +1,12 @@
+/* src/components/Footer.css */
+.site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import SocialLinks from './components/SocialLinks';
+import ContactForm from './components/ContactForm';
+import AffiliateLinks from './components/AffiliateLinks';
+import TopSection from './components/TopSection';
+import MiddleSection from './components/MiddleSection';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={
+          <div className='parentBG'>
+            <TopSection />
+            <MiddleSection /> 
+            <SocialLinks />
+            <ContactForm />
+            <AffiliateLinks />
+          </div>
+        } />
+        {/* Add more routes if needed */}
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
