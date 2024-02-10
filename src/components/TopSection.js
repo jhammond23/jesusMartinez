@@ -18,46 +18,34 @@ const TopSection = () => {
             <img src={r3} alt="R3" className="top-right-image" />
             <img src={l3gion} alt="L3GION" className="middle-right-image" />
             <div className="content">
+
+
+
                 <div className='heroPT1'>
-                    <h1 className='nameh1'>Jesus Martinez</h1>
-                    <div className="social-media-icons-container">
-                        {/* Wrap each icon with Tilt component */}
-                        <Tilt className="Tilt" options={{ max: 55, perspective: 550, scale: 1.05 }}>
-                            <a href="https://twitter.com/jesusmartinez" target="_blank" rel="noopener noreferrer" className="Tilt-inner">
-                                <TwitterXIcon className="icon" />
-                            </a>
-                        </Tilt>
-                        <Tilt className="Tilt" options={{ max: 55, perspective: 550, scale: 1.05 }}>
-                            <a href="https://youtube.com/jesusmartinez" target="_blank" rel="noopener noreferrer" className="Tilt-inner">
-                                <YoutubeIcon className="icon" />
-                            </a>
-                        </Tilt>
-                        <Tilt className="Tilt" options={{ max: 55, perspective: 550, scale: 1.05 }}>
-                            <a href="https://instagram.com/jesusmartinez" target="_blank" rel="noopener noreferrer" className="Tilt-inner">
-                                <InstagramIcon className="icon" />
-                            </a>
-                        </Tilt>
-                        <Tilt className="Tilt" options={{ max: 55, perspective: 550, scale: 1.05 }}>
-                            <a href="https://tiktok.com/jesusmartinez" target="_blank" rel="noopener noreferrer" className="Tilt-inner">
-                                <TiktokIcon className="icon" />
-                            </a>
-                        </Tilt>
-                    </div>
+                    <h1 className='nameh1'>Jesus<br />Martinez</h1>
+
                 </div>
                 <div className='heroPT2'>
-                    
-                    <h2>Web3 Gaming Connoisseur</h2>
 
-                    <h3 className='h3'>Great at playing games & even better at finding the best games</h3>
+                    {/* <h2>Web3 Gaming Content Creator</h2> */}
 
-                    <button className="cta-button">Let's Collab</button>
+                    <h2 className='cta-h2'><span className='keyword'>Supercharge</span> <span className='text'>your marketing with web3 gaming's leading light, Jesus Martinez. </span><span className='keyword'>Reach new audiences</span><span className='text'> and propel your game to new heights with our collaboration, or </span><span className='keyword'>subscribe</span><span className='text'> to R3wind, your gateway to pioneering trends and insights in the future of web3 gaming.</span></h2>
 
+                    <div className="image-container">
+                        <img className='jesus-martinez-image' src={jesusmartinez} alt="Jesus Martinez" />
+                    </div>
+                    <div className='cta-button-container'>
+                        <a href='/contact-me' target="_blank" rel="noopener noreferrer">
+                            <button className="cta-button btn1">Let's Collab</button>
+                        </a>
+                        <a href='https://r3wind.beehiiv.com/subscribe' target="_blank" rel="noopener noreferrer">
+                            <button className="cta-button btn2">R3wind</button>
+                        </a>
+                    </div>
                 </div>
 
             </div>
-            <div className="image-container">
-                <img src={jesusmartinez} alt="Jesus Martinez" />
-            </div>
+
         </section>
     );
 }

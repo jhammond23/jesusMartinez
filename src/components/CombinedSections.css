@@ -1,0 +1,301 @@
+/* CombinedSections.css */
+.section-combined {
+    color: #333;
+    /* A darker text color for better contrast */
+    font-family: 'Press Start 2p', cursive;
+    text-align: center;
+    /* Center align the text */
+    padding: 60px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    /* Center the section horizontally */
+    position: relative;
+    border-radius: 15px;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* Center children horizontally */
+    justify-content: space-evenly;
+    position: relative;
+    flex-direction: row;
+
+
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+
+.column {
+    border: 2px solid #050505;
+    padding: 50px 40px;
+    border-radius: 50px 100px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transition for hover effect and shadow */
+    position: relative;
+    max-width: 40%;
+    color: black;
+    z-index: 99;
+    background-color: #111;
+    box-shadow: inset 0 0 50px #000, 0 0 50px #000;
+    margin-top: 50px;
+
+}
+
+.column::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/cardbg.png');
+    background-size: cover;
+    z-index: -1;
+    opacity: .1;
+    
+}
+
+.column h2 {
+    color: #572dff;
+    /* Vibrant color for headings */
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Subtle text shadow for depth */
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    line-height: 180%;
+}
+
+.column p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    /* Spacing for readability */
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.newsletter::after,
+.discord::after {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    width: 75px;
+    transition: opacity 0.3s ease;
+    /* Smooth transition for hover effect */
+    transform: translate(-25%, -25%);
+    box-shadow: 0 0px 18px #572dff;
+    z-index: 100;
+}
+
+.newsletter::after {
+    background-image: url('../media/logo_2_4.png');
+
+}
+
+
+.discord::after {
+    background-image: url('../media/Discord_Server_Logo.jpg');
+}
+
+.r3wind,
+.l3gion {
+    color: #dad1ff;
+    font-family: 'Press Start 2p', cursive;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px #572dff;
+    line-height: 110%;
+    display: block;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0px 8px #572dff;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+}
+
+.btn-primary {
+    background-color: #dad1ff;
+    color: black;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0px 18px #572dff;
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+
+.btn-secondary {
+    background-color: #dad1ff;
+    color: black;
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 0px 18px #572dff;
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+
+/* Background logo images */
+
+.card-container {
+    position: relative;
+    /* other styles for your container */
+}
+
+.circular-image {
+    position: absolute;
+    width: 75px;
+    /* or any other size */
+    height: 75px;
+    /* or any other size */
+    border-radius: 50%;
+    opacity: 0.08;
+}
+
+/* Position the images using nth-child for specificity */
+.container .circular-image:nth-child(1) {
+    top: -25px;
+    left: 20%;
+}
+
+.container .circular-image:nth-child(2) {
+    bottom: -100px;
+    left: 30%;
+}
+
+.container .circular-image:nth-child(3) {
+    top: -125px;
+    right: 20%;
+}
+
+.container .circular-image:nth-child(4) {
+    top: -75px;
+    right: 40%;
+}
+
+.container .circular-image:nth-child(5) {
+    bottom: -125px;
+    left: 50%;
+}
+
+.container .circular-image:nth-child(6) {
+    top: -50px;
+    right: 50%;
+}
+
+.container .circular-image:nth-child(7) {
+    bottom: -150px;
+    left: 70%;
+}
+
+.container .circular-image:nth-child(8) {
+    bottom: 100px;
+    right: 70%;
+}
+
+.container .circular-image:nth-child(9) {
+    bottom: 125px;
+    left: 90%;
+}
+
+.container .circular-image:nth-child(10) {
+    bottom: 50px;
+    right: 90%;
+}
+
+.container .circular-image:nth-child(11) {
+    bottom: -75px;
+    left: 110%;
+}
+
+.container .circular-image:nth-child(12) {
+    bottom: -25px;
+    right: 110%;
+}
+
+.container .circular-image:nth-child(13) {
+    bottom: -125px;
+    left: 130%;
+}
+
+.container .circular-image:nth-child(14) {
+    bottom: 100px;
+    right: 130%;
+}
+
+.container .circular-image:nth-child(15) {
+    bottom: 50px;
+    left: 150%;
+}
+
+.container .circular-image:nth-child(16) {
+    bottom: 75px;
+    right: 150%;
+}
+
+
+
+
+  /* Extra extra small screens, smaller than 576px */
+  @media (max-width: 1500px) {
+
+
+    .section-combined {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .container {
+       width: 100%;
+       max-width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column;
+
+       
+    }
+
+    .columns {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .column {
+        max-width: 100%;
+        padding: 80px 20px;
+        margin: 40px 20px;
+
+    }
+
+  }

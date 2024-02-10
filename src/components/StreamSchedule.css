@@ -1,0 +1,152 @@
+#stream-schedule {
+    color: #572dff;
+    text-align: center; /* Center the text */
+    font-family: 'Arial', sans-serif; /* Assuming Arial is the font used */
+  }
+  
+  .schedule-container {
+    position: relative; /* Set position to relative to contain the absolute pseudo-element */
+    overflow: hidden; /* Hide the overflow so the line doesn't show outside the container */
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+    padding: 0px 20px; /* Padding around the container */
+   }
+  
+  .schedule-header {
+    margin: 30px 0 30px 0; /* Space below the header */
+  }
+  
+  .schedule-title {
+    font-size: 2em; /* Large, eye-catching title */
+    color: #dad1ff;
+    font-family: 'Press Start 2p', cursive; /* Assuming Press Start 2p is the font used */
+    text-shadow: 2px 2px 4px #572dff;
+  }
+  
+  .schedule-list {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Add space between items */
+    flex-wrap: wrap; /* Wrap items to next line if not enough space */
+    margin-bottom: 30px; /* Space below the list */
+  }
+  
+  .schedule-item {
+    color: #dad1ff;
+    text-shadow: #572dff 0px 0px 5px;
+    padding: 20px; /* Padding inside each item */
+    font-size: 1.8em; /* Font size for the items */
+    font-weight: bold; /* Bold font for the text */
+    border: none; /* No border */
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .schedule-item * {
+    font-family: 'Press Start 2p', cursive; 
+  }
+  
+  .day {
+    display: block;
+    margin-bottom: 5px; /* Space between day and time */
+  }
+  
+  .time {
+    display: block;
+    font-size: 0.8em;
+    color: #572dff;
+    margin-top: 5px;
+  }
+  
+  .streaming-platform {
+    font-size: 1em;
+    padding: 20px 0; /* Padding around the platform link */
+  }
+  
+  .streaming-link {
+    color: #572dff; /* Vibrant color for the link */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold font for the link */
+    font-size: 1.5rem;
+  }
+  
+  .yttn {
+    width: 20%;
+    border-radius: 25px;
+    min-width: 200px;
+    margin: 10px auto;
+    padding: 30px;
+    background: url('../media/cardbg3.png') no-repeat center center;
+    position: absolute;
+
+  }
+
+  .yttn iframe {
+    border-radius: 25px;
+    border: 1px solid #222;
+  }
+
+  .video-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px; /* Add space between the videos */
+  }
+  
+  .video-item {
+    border-radius: 25px;
+    margin: 10px;
+    flex-basis: calc(33.333% - 150px); /* Equal width for 3 videos, adjust the value based on margins and paddings */
+    min-width: 300px; /* Minimum width, you can adjust it based on your design */
+    aspect-ratio: 16 / 9; /* Maintain the aspect ratio for videos */
+    position: relative; /* Relative position for placing iframe absolutely inside this container */
+    overflow: hidden; /* Hide the overflow to maintain border-radius */
+  }
+  
+  .video-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Full height of the parent container */
+    border-radius: 25px;
+    border: 1px solid #222;
+  }
+  
+  .video-title {
+    color: #dad1ff;
+    font-size: 1.3rem;
+    margin-top: 5px; /* Adjust the margin as needed */
+  }
+  
+
+  /* Extra extra small screens, smaller than 576px */
+@media (max-width: 1500px) {
+
+  .schedule-title {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .schedule-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
+  .video-list {
+    width: 100%;
+    margin: 0;
+
+  }
+
+
+
+}

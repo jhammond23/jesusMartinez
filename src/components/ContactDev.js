@@ -8,13 +8,13 @@ const ContactForm = () => {
         <div className="contact-header">
           <div className="contact-header-block1">
             <h1>Get In Touch</h1>
-            <a href='mailto:classynft@gmail.com' className="contact-email">classynft@gmail.com</a>
+            <a href='mailto:hammerhammond23@gmail.com' className="contact-email">hammerhammond23@gmail.com</a>
           </div>
           <div className='contact-blurb'>Like what you see? Curious about how we can work together? Ask me anything. Tell me what you need. My team will get back to you within 48 hours.</div>
         </div>
         <form
           className="contact-form"
-          action="https://formsubmit.co/classynft@gmail.com"
+          action="https://formsubmit.co/hammerhammond23@gmail.com"
           method="POST"
         >
           {/* Remove the _next hidden field to use FormSubmit's default redirection */}

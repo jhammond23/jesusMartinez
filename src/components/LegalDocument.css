@@ -1,0 +1,41 @@
+/* LegalDocument.css */
+
+.legal-document {
+    padding: 80px;
+    background-color: #111;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 100vh;
+  }
+  
+  .legal-document h1 {
+    color: #dad1ff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+  }
+  
+  .legal-document h2 {
+    color: #dad1ff;
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
+  .legal-document p {
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  .legal-document ul, .legal-document ol {
+    margin-left: 20px;
+  }
+  
+  .back-link {
+    color: #572dff;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+
+  /* Add more styling as necessary */
+  

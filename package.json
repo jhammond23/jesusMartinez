@@ -13,6 +13,7 @@
     "express": "^4.18.2",
     "nodemailer": "^6.9.8",
     "react": "^18.2.0",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-parallax": "^3.5.1",
     "react-router-dom": "^6.21.3",

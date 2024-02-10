@@ -1,15 +1,26 @@
 * {
   font-family: 'Share Tech';
-
 }
 
 .parentBG {
-  background-color: #191919;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #151515;
+  background-image: linear-gradient(#4987c517 .1em, transparent .1em), linear-gradient(90deg, #6199d117 .1em, transparent .1em);
+  background-size: 1em 1em;
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+  min-height: 40vh;
+  max-height: max-content;
+  left: 0px;
+  transition: opacity 800ms ease, 
+    background-size 800ms ease,
+    background-position 800ms ease;
+  z-index: -1;
+  width: 100%;
 }
 
 .App {

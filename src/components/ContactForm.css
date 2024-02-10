@@ -1,0 +1,147 @@
+.contact-bg {
+    background-color: #111;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    background-image: linear-gradient(#3774b117 .1em, transparent .1em), linear-gradient(90deg, #3774b117 .1em, transparent .1em);
+    background-size: 1em 1em;
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+    min-height: 40vh;
+    max-height: max-content;
+    left: 0px;
+    transition: opacity 800ms ease, 
+      background-size 800ms ease,
+      background-position 800ms ease;
+    z-index: -1;
+}
+
+.contact-container {
+    max-width: 60vw;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    padding: 50px;
+    border: 2px solid #572dff;
+    border-radius: 50px;
+    box-shadow: 0 0 15px #572dff;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 40px;
+}
+
+.contact-header {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.contact-header-block1 {
+    width: 50%;
+    text-align: left;
+}
+
+  .contact-container h1 {
+    color: #dad1ff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Press Start 2p', cursive;
+    text-shadow: 0 0 5px #572dff;
+
+  }
+  
+  .contact-email {
+    color: #572dff;
+    font-size: 1.5rem;
+  }
+  
+.contact-blurb {
+    color: #dad1ff;
+    margin: 30px 0;
+    font-size: 1.2rem;
+}
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    width: 70%;
+  }
+  
+  .form-label {
+    width: fit-content;
+    color: #dad1ff;
+    text-align: left;
+    margin-right: 2%;
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  .form-input,
+  .form-textarea {
+    border: none;
+    border-bottom: 2px solid #572dff;
+    background-color: transparent;
+    height: 30px;
+    font-size: 1.8rem;
+    color: #555;
+    width: 100%;
+  }
+  
+  .form-input::placeholder,
+  .form-textarea::placeholder {
+    color: #572dff;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+  }
+  
+  .message-field {
+    align-items: flex-start;
+  }
+  
+  .form-textarea {
+    height: 2rem;
+  }
+  
+  .recaptcha-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .submit-button {
+    background-color: transparent;
+    color: #dad1ff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 3.5rem;
+    transition: all 0.2s ease;
+    font-family: 'Press Start 2p', cursive;
+    margin-top: 20px;
+    text-shadow: 0 0 5px #572dff;
+
+  }
+  
+  .submit-button:hover {
+    transform: scale(1.01);
+    text-shadow: 0 0 15px #572dff;
+  }
+  
+  /* Add other styles like responsive adjustments as necessary */
+  

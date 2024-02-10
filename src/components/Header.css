@@ -4,12 +4,17 @@
     color: white;
     padding: 10px 0;
     height: 5vh;
-    box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px #000;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* Adjusted for even spacing */
     align-items: center;
     width: 80%;
     margin: 0 auto;
@@ -18,6 +23,18 @@
 
 .header-logo {
     font-size: 1.3rem;
+    font-family: 'Press Start 2p', cursive;
+    letter-spacing: 2px;
+    color: #dad1ff;
+    text-decoration: none;
+
+}
+
+.header-logo:hover {
+    color: #fff;
+    transition: all 0.25s ease;
+    text-shadow: 0 0 5px #572dff;
+    scale: 1.01;
 }
 
 .header-nav .nav-link {
@@ -27,5 +44,286 @@
 }
 
 .header-nav .nav-link:hover {
-    text-decoration: underline;
+    color: #dad1ff;
+    text-shadow: 0 0 5px #572dff;
+    transition: all 0.25s ease;
+    scale: 1.01;
 }
+
+.social-media-icons-container {
+    display: flex;
+    /* Flex to keep them in a row */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center icons container */
+}
+
+.social-media-icon svg {
+    width: 25px;
+    /* Adjust size as necessary */
+    height: 25px;
+    /* Adjust size as necessary */
+    margin: 0 10px;
+    /* Add some space between icons */
+    transition: transform 0.3s ease;
+}
+
+.social-media-icon::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #00f;
+    /* Placeholder for gradient or other style */
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.social-media-icon:hover::before {
+    transform: scale(1);
+}
+
+/* Tilt effect container */
+.Tilt {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px;
+    cursor: pointer;
+}
+
+
+/* Tilt effect on hover */
+.Tilt:hover {
+    transform: rotateZ(-10deg) scale(1.1);
+}
+
+/* Inner content of the tilt effect container */
+.Tilt-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Tilt svg:hover {
+    transform: scale(1.1);
+    rotate: 6deg;
+
+}
+
+/* Icon styles */
+.icon {
+    transition: transform 0.3s ease;
+    /* Smooth transition for icon */
+}
+
+.xCont {
+    position: relative;
+}
+
+.xCont::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    /* Show it without scaling down */
+    background-color: white;
+    height: 50%;
+    /* You may need to adjust this value */
+    width: 50%;
+    /* You may need to adjust this value */
+    z-index: 0;
+}
+
+
+.xCont .icon {
+    position: relative;
+    z-index: 1;
+    /* Ensure it's above the pseudo-element */
+}
+
+.contact-nav-button {
+    background-color: #dad1ff;
+    border: none;
+    padding: 6px 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: black !important;
+
+}
+
+.contact-nav-button:hover {
+    background-color: #fff;
+    box-shadow: 0 0 5px #572dff;
+    scale: 1.01;
+    text-shadow: none !important;
+
+}
+
+.menu-icon {
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hamburger-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1500px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .header-nav,
+    .social-media-icons-container {
+        display: none;
+        flex-direction: column;
+    }
+
+    .header-nav.visible,
+    .social-media-icons-container.visible {
+        display: flex;
+    }
+
+
+
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #050505;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.5rem;
+}
+
+.bm-menu .menu-item {
+    color: #000;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    background-color: #dad1ff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px 15px;
+
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mobile-content {
+    display: none;
+}
+
+/* Hide non-burger menu navigation and social media icons for smaller screens */
+@media (max-width: 1500px) {
+
+    .header-nav,
+    .social-media-icons-container {
+        display: none;
+    }
+
+
+    /* You can add additional styling for the burger menu here if needed */
+}
+
+/* Show burger menu only for smaller screens */
+.bm-burger-button {
+    display: none;
+}
+
+
+
+@media (max-width: 1500px) {
+    .site-header {
+        height: 50px;
+    }
+
+    .header-logo {
+        margin-right: 30px;
+    }
+
+    .bm-burger-button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        margin: 0 20px;
+    }
+
+    .Tilt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        height: 80px;
+        width: 80px;
+        text-align: center;
+        background-color: #dad1ff;
+        border-radius: 25px;
+    }
+
+    .mobile-content {
+        display: contents;
+
+    }
+}
+
