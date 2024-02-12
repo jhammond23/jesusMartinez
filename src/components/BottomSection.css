@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-around;
   align-items: stretch; /* Ensure items stretch to fill the container */
-  background: linear-gradient(to right, #14154d 0%, #0f0f0f 70%);
+  background: linear-gradient(to right, #14154d 0%, #14154d 70%);
   box-shadow: 10px 10px 50px #000, inset 0 0 50px #000;
   border-radius: 50px;
 
@@ -122,6 +122,9 @@
 
   .bottom-section {
     padding: 20px 0; 
+    width: 90vw;
+    margin-top: 120px;
+
   }
 
   .bottom-contact-container h2, .media-assets-container h2 {
